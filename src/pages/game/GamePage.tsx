@@ -339,7 +339,8 @@ function GamePage () {
                         <div className={'back-btn'} onClick={handleExit}> <ArrowCircleLeft  fontSize={'inherit'}/> Exit </div>
                         <div className={'row-page'}>
                             <Game positions={positions} ownTurn={ownTurn} shotsOwn={ownShots} shotsOpponent={opponentShots} onShoot={onShoot}/>
-                            <Chat messages={messages} userId={userID} sendMessage={handleSendMessage}/>
+                            <Chat messages={messages} userId={userID} sendMessage={handleSendMessage}
+                                  userName={undefined} opponentName={undefined}/>
                         </div>
                         <audio className={'miss-audio'}>
                             <source src={"https://cdn.pixabay.com/download/audio/2021/08/09/audio_0dcf482f2f.mp3?filename=jump-into-water-splash-sound-6999.mp3"}/>
